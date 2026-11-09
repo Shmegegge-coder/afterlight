@@ -1,0 +1,29 @@
+# Render Blueprint: backend only (free web service). Frontend goes on Vercel (frontend/vercel.json).
+services:
+  - type: web
+    name: afterlight-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: MONGO_URL            # MongoDB Atlas M0 connection string (mongodb+srv://...)
+        sync: false
+      - key: DB_NAME
+        value: afterlight
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD_HASH  # python backend/hash_password.py
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: COOKIE_SECURE
+        value: "true"
+      # Optional: FAL_KEY (video clips), TEXT_MODEL, IMAGE_MODEL, CORS_ORIGINS (only for a cross-site frontend)

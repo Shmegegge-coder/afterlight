@@ -1,0 +1,16 @@
+# deps / builds
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.tsbuildinfo
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+# local test output
+e2e/shots/
+*.log
+.DS_Store

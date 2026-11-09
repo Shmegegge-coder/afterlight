@@ -1,0 +1,77 @@
+[
+ {
+  "id": "sample-eleanor-vance",
+  "name": "Eleanor Vance",
+  "birth_date": "1938-04-12",
+  "death_date": "2025-11-03",
+  "epitaph": "Botanist, grandmother, keeper of gardens and secrets.",
+  "is_sample": true,
+  "photos": [],
+  "stories": [
+   {
+    "id": "sample-s1",
+    "title": "Her rose garden",
+    "text": "Every June morning she was out with her shears before anyone else woke, humming to the roses.",
+    "photo_id": null,
+    "caption": "Every June, before the house woke, Eleanor was already among her roses \u2014 humming to them like old friends.",
+    "image_url": "https://images.unsplash.com/photo-1532374876708-35a5580482a9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+    "image_status": "done",
+    "image_error": null,
+    "video_url": null,
+    "video_status": "idle",
+    "video_error": null
+   },
+   {
+    "id": "sample-s2",
+    "title": "The day she taught me to fish",
+    "text": "At the lake dock at sunrise, she showed me patience \u2014 and laughed when I caught her hat instead of a fish.",
+    "photo_id": null,
+    "caption": "At sunrise on the dock, she taught us patience \u2014 and laughed the loudest when the only catch was her hat.",
+    "image_url": "https://images.unsplash.com/photo-1781935307641-641f7c3e8681?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+    "image_status": "done",
+    "image_error": null,
+    "video_url": null,
+    "video_status": "idle",
+    "video_error": null
+   },
+   {
+    "id": "sample-s3",
+    "title": "Dancing with Grandpa",
+    "text": "Fifty-two years married, and they still danced in the field behind the farmhouse every anniversary.",
+    "photo_id": null,
+    "caption": "Fifty-two years, and still she danced with him under the open sky, as if it were the very first time.",
+    "image_url": "https://images.unsplash.com/photo-1749224240449-2728bac89c60?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+    "image_status": "done",
+    "image_error": null,
+    "video_url": null,
+    "video_status": "idle",
+    "video_error": null
+   },
+   {
+    "id": "sample-s4",
+    "title": "Sunday baking",
+    "text": "Flour on every surface, cinnamon in the air, and a grandchild on a stool learning her secret pie crust.",
+    "photo_id": null,
+    "caption": "Flour everywhere, cinnamon in the air \u2014 and a secret crust passed gently from her hands to ours.",
+    "image_url": "https://images.unsplash.com/photo-1758874960466-fb0a3e0007bc?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+    "image_status": "done",
+    "image_error": null,
+    "video_url": null,
+    "video_status": "idle",
+    "video_error": null
+   }
+  ],
+  "finale": {
+   "image_url": "https://images.unsplash.com/photo-1707218526479-91d005196060?crop=entropy&cs=srgb&fm=jpg&q=85&w=1600",
+   "status": "done",
+   "error": null
+  },
+  "narration": {
+   "intro": "Welcome. Today we step inside the memories of Eleanor Vance \u2014 gardener, teacher, dancer, and the warm center of every family table.",
+   "finale": "And now, Eleanor rises \u2014 wings open, into the golden light she always carried for us. Go gently, Eleanor. Your garden will keep blooming.",
+   "status": "done",
+   "error": null
+  },
+  "created_at": "2026-11-04T20:21:55.774000"
+ }
+]
