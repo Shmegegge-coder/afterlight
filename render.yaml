@@ -1,4 +1,4 @@
-# Render Blueprint: backend only (free web service). Frontend goes on Vercel (frontend/vercel.json).
+# Render Blueprint: backend (free web service) + frontend (free static site). Vercel config also kept (frontend/vercel.json).
 services:
   - type: web
     name: afterlight-api
@@ -27,3 +27,22 @@ services:
       - key: COOKIE_SECURE
         value: "true"
       # Optional: FAL_KEY (video clips), TEXT_MODEL, IMAGE_MODEL, CORS_ORIGINS (only for a cross-site frontend)
+
+  # Frontend as a free Render static site. /api/* is proxied to the backend so the app stays
+  # same-origin (staff cookie is SameSite=Lax), so CORS isn't needed for it.
+  - type: web
+    name: afterlight-web
+    runtime: static
+    rootDir: frontend
+    buildCommand: yarn install --frozen-lockfile && yarn build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://afterlight-api-tal1.onrender.com/api/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
